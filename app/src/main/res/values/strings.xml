@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">TresMade</string>
+    <string name="team_one_logo">Cavalier\'s Logo</string>
+    <string name="team_two_logo">Warrior\'s Logo</string>
+    <string name="threes_made">Three\'s Made</string>
+    <string name="zeroValue">0</string>
+    <string name="shooting_percentage">Shooting Percentage</string>
+    <string name="three_pt_make">3pt Make</string>
+    <string name="three_pt_miss">3pt Miss</string>
+    <string name="undo_make">Undo Make</string>
+    <string name="undo_miss">Undo Miss</string>
+    <string name="reset_all">Reset All</string>
+</resources>

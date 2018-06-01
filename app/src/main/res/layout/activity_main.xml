@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:id="@+id/teamOne"
+        android:layout_width="164dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="150sp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/team_one_logo"
+            android:src="@drawable/cavs" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/threes_made"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/teamOneMade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/zeroValue"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/shooting_percentage"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/teamOnePercentage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/zeroValue"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="teamOneMake"
+            android:text="@string/three_pt_make"
+            android:textAllCaps="true" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="teamOneMiss"
+            android:text="@string/three_pt_miss"
+            android:textAllCaps="true" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="teamOneUndoMake"
+            android:text="@string/undo_make"
+            android:textAllCaps="true" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="teamOneUndoMiss"
+            android:text="@string/undo_miss"
+            android:textAllCaps="true" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="31dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/colorPrimary"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toStartOf="@+id/teamTwo"
+        app:layout_constraintStart_toEndOf="@+id/teamOne"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </View>
+
+    <LinearLayout
+        android:id="@+id/teamTwo"
+        android:layout_width="164dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/teamOne"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/team_two_logo"
+            android:src="@drawable/warriors" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/threes_made"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/teamTwoMade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/zeroValue"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/shooting_percentage"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/teamTwoPercentage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/zeroValue"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="teamTwoMake"
+            android:text="@string/three_pt_make"
+            android:textAllCaps="true" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="teamTwoMiss"
+            android:text="@string/three_pt_miss"
+            android:textAllCaps="true" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="teamTwoUndoMake"
+            android:text="@string/undo_make"
+            android:textAllCaps="true" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="teamTwoUndoMiss"
+            android:text="@string/undo_miss"
+            android:textAllCaps="true" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:onClick="reset"
+        android:text="@string/reset_all"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+</android.support.constraint.ConstraintLayout>
